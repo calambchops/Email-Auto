@@ -1,7 +1,7 @@
-#Email Automation
+# Email Automation
 
 
-#f03c15 Sub main()
+    Sub main()
 
     Dim FileName As String
     Dim wb As Workbook
