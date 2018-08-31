@@ -163,7 +163,7 @@ Increment subroutine increments the cell column number and concatenates it with 
 IsNew function returns to a flag in main, determines whether or not to proceed to create message. If not a new employee returns false to local variable and doesn't create message.   
 
     
-##### IsNew
+###### IsNew
 
 
     Function IsNew(ByVal NameVar) As Boolean
