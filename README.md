@@ -6,7 +6,7 @@ Using data from excel documents submitted to building property management, build
 
 ## Code Breakdown
 The main procedure contains class and variable declarations. We establish the first row in which data will be read from.
-`
+
     Sub main()
 
     Dim FileName As String
@@ -28,7 +28,7 @@ The main procedure contains class and variable declarations. We establish the fi
     NameVar.phtype = Ws.Range(IncVar.phtype_letter).Value
     NameVar.Name = Ws.Range(IncVar.name_letter).Value
 
-`
+
 Next, a while loop tests for a blank string value in the name cell. If the string length doesn't equal zero, we proceed to split the name into an array and assign these values to extract the first and last name, and whether it is indicated that this is a "new" employee.
 
 
