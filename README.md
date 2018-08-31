@@ -1,11 +1,15 @@
 # Email Automation
 
+
 ## Basic Overview
 
 Using data from excel documents submitted to building property management, builds a message in outlook to send to new employees with the proper details including the subject, personalized message body, and attachment. 
 
 ## Code Breakdown
+
 The main procedure contains class and variable declarations. We establish the first row in which data will be read from.
+
+
 
     Sub main()
 
