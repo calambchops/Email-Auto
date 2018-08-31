@@ -47,7 +47,7 @@ Next, a while loop tests for a blank string value in the name cell. If the strin
 If there's "new" keyword in the string, set flag, then call create message subroutine. UBound function counts the number of words separated by a space.
 
 
-###SplitName
+######SplitName
 
     Sub SplitName(NameVar As CNameType)
 
@@ -76,7 +76,7 @@ If there's "new" keyword in the string, set flag, then call create message subro
 CreateMessage subroutine creates outlook object and completes email recipient and address, body details, and adds attachment.
 
 
-###CreateMessage
+######CreateMessage
 
 
     Sub CreateMessage(NameVar As CNameType)
@@ -107,7 +107,7 @@ CreateMessage subroutine creates outlook object and completes email recipient an
 
 BodySelect builds email message body. The If statement will breakdown one of two options, "D" for digital or "A" for analog, and a template will be used and returned to the CreateMessage subroutine.
 
-###BodySelect
+######BodySelect
 
     
     Function BodySelect(OutMail As Object, NameVar As CNameType)
@@ -134,7 +134,7 @@ BodySelect builds email message body. The If statement will breakdown one of two
      
 Increment subroutine increments the cell column number and concatenates it with the row letter. We use this to assign the next cell value to the string variables.
      
-###Increment
+######Increment
 
 
      
@@ -158,7 +158,7 @@ Increment subroutine increments the cell column number and concatenates it with 
 IsNew function returns to a flag in main, determines whether or not to proceed to create message. If not a new employee returns false to local variable and doesn't create message.   
 
     
-###IsNew
+######IsNew
 
 
     Function IsNew(ByVal NameVar) As Boolean
