@@ -3,7 +3,7 @@
 
 ## Basic Overview
 
-Using data from excel documents submitted to building property management, builds a message in outlook to send to new employees with the proper details including the subject, personalized message body, and attachment. 
+Using data from excel documents submitted to building property management, builds a welcome message in outlook to send to new employees their phone number and voicemail pin and includes proper email details including the subject, personalized message body, and attachment. 
 
 ## Code Breakdown
 
