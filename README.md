@@ -33,7 +33,7 @@ The main procedure contains class and variable declarations. We establish the fi
     NameVar.Name = Ws.Range(IncVar.name_letter).Value
 
 
-Next, a while loop tests for a blank string value in the name cell. If the string length doesn't equal zero, we proceed to split the name into an array and assign these values to extract the first and last name, and whether it is indicated that this is a "new" employee.
+Next, a while loop tests for a blank string value in the name cell. If the string length doesn't equal zero, we split the name into an array and assign these values to extract the first and last name, and whether it is indicated that this is a "new" employee.
 
 
     While (Not (Len(NameVar.Name) = 0)) 'if cell is not blank, continue
@@ -78,7 +78,7 @@ If there's "new" keyword in the string, set flag, then call create message subro
 
 
  
-CreateMessage subroutine creates outlook object and completes email recipient and address, body details, and adds attachment.
+CreateMessage builds outlook object and completes email recipient and address, body details, and adds attachment.
 
 
 ###### CreateMessage
@@ -110,7 +110,7 @@ CreateMessage subroutine creates outlook object and completes email recipient an
     
     
 
-BodySelect builds email message body. The If statement will breakdown one of two options, "D" for digital or "A" for analog, and a template will be used and returned to the CreateMessage subroutine.
+BodySelect completes email message body given two options, and returns to CreateMessage subroutine.
 
 ###### BodySelect
 
@@ -137,7 +137,7 @@ BodySelect builds email message body. The If statement will breakdown one of two
      
      
      
-Increment subroutine increments the cell column number and concatenates it with the row letter. We use this to assign the next cell value to the string variables.
+Increment increases the cell column number and concatenates it with the row letter. 
      
 ###### Increment
 
